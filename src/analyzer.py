@@ -12,7 +12,7 @@ def total_events():
 def login_success():
     total = 0
 
-    with open("logs.txt") as file_object:
+    with open("data/logs.txt") as file_object:
         for record in file_object:
             line = record.strip().split(",")
 
@@ -28,7 +28,7 @@ def login_success():
 def login_fail():
     total = 0
 
-    with open("logs.txt") as file_object:
+    with open("data/logs.txt") as file_object:
         for record in file_object:
             line = record.strip().split(",")
 
@@ -39,5 +39,21 @@ def login_fail():
                 total += 1
 
     print(f"Logins fallidos: {total}")
+
+# Unique users
+def unique_users():
+    total = 0
+    user_list = []
+
+    with open("data/logs.txt") as file_object:
+        for record in file_object:
+            line = record.strip().split(",")
+            user = line[1].strip()
+            user_list.append(user)
+
+    for i in set(user_list):
+        total += 1
+
+    print(f"Usuarios únicos: {total}")
 
 
