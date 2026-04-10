@@ -88,7 +88,7 @@ def suspicious_users():
 def top_users():
     user_count = {}
 
-    with open("logs.txt") as file_object:
+    with open("data/logs.txt") as file_object:
         for record in file_object:
             line = record.strip().split(",")
             user = line[1].strip()
