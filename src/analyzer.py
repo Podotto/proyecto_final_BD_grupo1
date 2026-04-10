@@ -83,5 +83,39 @@ def suspicious_users():
 
     if found == False:
         print("No hay usuarios sospechosos.")
+        
+# Top 3 usuarios con más actividad
+def top_users():
+    user_count = {}
+
+    with open("logs.txt") as file_object:
+        for record in file_object:
+            line = record.strip().split(",")
+            user = line[1].strip()
+
+            if user in user_count:
+                user_count[user] += 1
+            else:
+                user_count[user] = 1
+
+    sorted_users = sorted(user_count.items(), key=lambda item: item[1], reverse=True)
+
+    print("Top 3 usuarios con más actividad:")
+
+    total = 0
+    for user, count in sorted_users:
+        if total < 3:
+            print(f"{user}: {count}")
+            total += 1
+
+
+if __name__ == "__main__":
+    total_events()
+    login_success()
+    login_fail()
+    unique_users()
+    suspicious_users()
+    top_users()
+
 
 
