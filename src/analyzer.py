@@ -56,4 +56,32 @@ def unique_users():
 
     print(f"Usuarios únicos: {total}")
 
+# Usuarios sospechosos
+def suspicious_users():
+    fail_count = {}
+
+    with open("data/logs.txt") as file_object:
+        for record in file_object:
+            line = record.strip().split(",")
+            user = line[1].strip()
+            event = line[2].strip()
+            status = line[3].strip()
+
+            if event == "LOGIN" and status == "FAIL":
+                if user in fail_count:
+                    fail_count[user] += 1
+                else:
+                    fail_count[user] = 1
+
+    print("Usuarios sospechosos:")
+    found = False
+
+    for user in fail_count:
+        if fail_count[user] > 3:
+            print(user)
+            found = True
+
+    if found == False:
+        print("No hay usuarios sospechosos.")
+
 
