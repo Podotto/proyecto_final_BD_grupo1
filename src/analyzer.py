@@ -8,7 +8,7 @@ def total_events():
 
     print(f"Total de eventos: {total}")
     
-# Successful Logins
+# Successful Login
 def login_success():
     total = 0
 
