@@ -21,4 +21,15 @@ def create_report():
                 user_count[user] += 1
             else: 
                 user_count[user] = 1 
+            
+            if event == "LOGIN" and status == "SUCCESS":
+                login_success += 1
+
+            if event == "LOGIN" and status == "FAIL":
+                login_fail += 1
+
+                if user in fail_count:
+                    fail_count[user] += 1
+                else:
+                    fail_count[user] = 1
         
