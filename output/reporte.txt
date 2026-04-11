@@ -1,0 +1,61 @@
+REPORTE DE ANALISIS DE LOGS
+---------------------------
+Total de eventos: 6000
+Logins exitosos: 1043
+Logins fallidos: 412
+Usuarios únicos: 50
+
+Usuarios sospechosos:
+user19
+user42
+user14
+user44
+user46
+user38
+user30
+user28
+user15
+user21
+user27
+user11
+user25
+user49
+user13
+user47
+user36
+user16
+user18
+user37
+user12
+user5
+user39
+user34
+user4
+user22
+user23
+user45
+user33
+user9
+user2
+user17
+user6
+user7
+user43
+user32
+user48
+user20
+user40
+user1
+user50
+user8
+user3
+user31
+user10
+user24
+user35
+user26
+
+Top 3 usuarios con más actividad:
+user25: 142
+user21: 140
+user2: 138
