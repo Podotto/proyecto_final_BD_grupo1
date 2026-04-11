@@ -1,7 +1,9 @@
-from .reader import read_logs
-from .processor import process_data
-from .analyzer import analyze_data
-from .report import create_report
+
+
+from src.reader import read_logs
+from src.processor import process_logs
+from src.analyzer import total_events, login_success, login_fail, unique_users, suspicious_users, top_users
+from src.report import create_report
 
 
 def mostrar_menu():
@@ -22,11 +24,11 @@ def mostrar_menu():
 
             case "2":
                 print("Procesando datos...")
-                process_data()
+                process_logs()
 
             case "3":
                 print("Analizando datos...")
-                analyze_data()
+                total_events(), login_success(), login_fail(), unique_users(), suspicious_users(), top_users()
 
             case "4":
                 print("Generando reporte...")
@@ -41,5 +43,4 @@ def mostrar_menu():
 
 
 
-    mostrar_menu()
-``
+mostrar_menu()
