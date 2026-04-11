@@ -1,5 +1,5 @@
 def create_report(): 
-    total_event = 0 
+    total_events = 0 
     login_success = 0 
     login_fail = 0 
     user_list = []
@@ -13,15 +13,15 @@ def create_report():
             user = line[1].strip()
             event = line[2].strip()
             status = line[3].strip()
-            
-            total_event += 1 
+
+            total_events += 1
             user_list.append(user)
-            
-            if user in user_count: 
+
+            if user in user_count:
                 user_count[user] += 1
-            else: 
-                user_count[user] = 1 
-            
+            else:
+                user_count[user] = 1
+
             if event == "LOGIN" and status == "SUCCESS":
                 login_success += 1
 
@@ -31,8 +31,8 @@ def create_report():
                 if user in fail_count:
                     fail_count[user] += 1
                 else:
-                    fail_count[user] = 1 
-                    
+                    fail_count[user] = 1
+
     unique_total = 0
     for user in set(user_list):
         unique_total += 1
@@ -42,9 +42,9 @@ def create_report():
         if fail_count[user] > 3:
             suspicious_list.append(user)
 
-    sorted_users = sorted(user_count.items(), key=lambda item: item[1], reverse=True) 
+    sorted_users = sorted(user_count.items(), key=lambda item: item[1], reverse=True)
     
-    with open("reporte.txt", "w") as report:
+    with open("output/reporte.txt", "w") as report:
         report.write("REPORTE DE ANALISIS DE LOGS\n")
         report.write("---------------------------\n")
         report.write(f"Total de eventos: {total_events}\n")
