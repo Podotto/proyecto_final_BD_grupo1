@@ -1,9 +1,16 @@
 
 
-from src.reader import read_logs
-from src.processor import process_logs
-from src.analyzer import total_events, login_success, login_fail, unique_users, suspicious_users, top_users
-from src.report import create_report
+from .reader import read_logs
+from .processor import process_logs
+from .analyzer import (
+    total_events,
+    login_success,
+    login_fail,
+    unique_users,
+    suspicious_users,
+    top_users,
+)
+from .report import create_report
 
 
 def mostrar_menu():
