@@ -67,8 +67,6 @@ def create_report():
                 total += 1
 
     print("Reporte generado correctamente.")
-    
 
-    create_report()
 
         
