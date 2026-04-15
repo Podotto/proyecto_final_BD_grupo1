@@ -51,10 +51,23 @@ El programa es ligero y no requiere instalaciones complejas. Solo se necesita:
 
 1. Clonar el respositorio
 ```
-Git clone https://github.com/Podotto/proyecto_final_BD_grupo1.git
+git clone https://github.com/Podotto/proyecto_final_BD_grupo1.git
 ```
 2. Ubicarse en la carpeta del proyecto
 3. Ejecutar el programa con Python utilizando el comando
 ```
 python -m src.menu
 ```
+
+En pocos segundos estará listo para utilizarse.
+
+## 🔀Flujo de la Aplicación
+
+El programa funciona mediante un menú interactivo que guía al usuario paso a paso:
+
+1. Cargar los registros desde el archivo ubicado en la carpeta 'data'
+2. Procesar la información
+3. Analizar los datos obtenidos
+4. Generar un reporte con los resultados en la carpeta 'output'
+
+El usuario solo necesita seleccionar las opciones del menú para obtener el análisis completo.
