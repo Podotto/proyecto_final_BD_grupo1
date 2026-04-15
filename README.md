@@ -80,7 +80,7 @@ El usuario solo necesita seleccionar las opciones del menú para obtener el aná
 - 🕵 Apoyo en auditorías básicas de seguridad
 - 🗃️ Revisión rápida de grandes volúmenes de registros
 
-## Futuras Mejoras
+## 🔜Futuras Mejoras
 
 - Interfaz gráfica más visual e intuitiva
 - Gráficos y estadísticas en tiempo real
@@ -88,3 +88,18 @@ El usuario solo necesita seleccionar las opciones del menú para obtener el aná
 - Soporte para múltiples formatos de archivos
 - Exportación de reportes en PDF y Excel
 - Integración con sistemas en vivo
+
+## 🛡️Seguridad
+
+Log Analyzer está diseñado para trabajar de forma segura y confiable:
+
+- Los datos se procesan fácilmente, sin enviarse a Internet
+- No se requiere acceso a información sensible del sistema
+- Los archivos originales no son modificados
+- Los resultados se generan en un archivo separado para mayor control
+
+Esto garantiza que la información analizada se mantenga privada y bajo control del usuario
+
+## 👥Autores
+
+Desarrollado por Alexis Castillo y Grethel Halphen, Especialistas en Big Data y Ciencia de Datos.
