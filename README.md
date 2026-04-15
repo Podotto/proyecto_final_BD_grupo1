@@ -38,3 +38,23 @@ log-analyzer/
  └── reporte.txt
 ```
 
+## 🛠️Tecnologías Utilizadas
+
+- Python (lógica de programación)
+- Manejo de archivos de texto (.txt)
+- Procesamiento de datos
+- Estructuras de datos básicas (listas y diccionarios)
+
+## ⬇️Instalación
+
+El programa es ligero y no requiere instalaciones complejas. Solo se necesita:
+
+1. Clonar el respositorio
+```
+Git clone https://github.com/Podotto/proyecto_final_BD_grupo1.git
+```
+2. Ubicarse en la carpeta del proyecto
+3. Ejecutar el programa con Python utilizando el comando
+```
+python -m src.menu
+```
