@@ -71,3 +71,20 @@ El programa funciona mediante un menú interactivo que guía al usuario paso a p
 4. Generar un reporte con los resultados en la carpeta 'output'
 
 El usuario solo necesita seleccionar las opciones del menú para obtener el análisis completo.
+
+## 💡Casos de Uso
+
+- 🔎 Monitoreo de actividad en sistemas informáticos
+- 🔒 Identificación de intentos de acceso no autorizados
+- 👤 Análisis de comportamiento de usuarios
+- 🕵 Apoyo en auditorías básicas de seguridad
+- 🗃️ Revisión rápida de grandes volúmenes de registros
+
+## Futuras Mejoras
+
+- Interfaz gráfica más visual e intuitiva
+- Gráficos y estadísticas en tiempo real
+- Análisis de múltiples archivos en tiempo real
+- Soporte para múltiples formatos de archivos
+- Exportación de reportes en PDF y Excel
+- Integración con sistemas en vivo
