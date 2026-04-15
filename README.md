@@ -16,3 +16,25 @@ Este sistema ayuda a identificar comportamientos importantes dentro de un sistem
 - 📊 Estadísticas de usuarios con mayor actividad
 - 📄 Generación de reportes listos para revisar
 - 🎯 Uso sencillo mediante un menú interactivo
+
+## 🗂️Arquitectura del Proyecto
+
+El programa está organizado de forma clara para facilitar su uso y mantenimiento.
+
+```
+log-analyzer/
+│
+├── data/
+│ └── logs.txt
+│
+├── src/
+│ ├── main.py
+│ ├── reader.py
+│ ├── processor.py
+│ ├── analyzer.py
+│ ├── reporter.py
+│
+└── output/
+ └── reporte.txt
+```
+
